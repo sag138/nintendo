@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*헤더*/
+div.hdrWrap{
+    height: 120px;
+    width: 100%;
+    background-color: #e60012;
+}
+div.hdrWrap .header{
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    /* float 줄 애들의 부모 요소에게 씀  */
+    display: flex;
+    /* 첫째랑 막내가 양 끝으로 가는것 */
+    justify-content: space-between;
+    /* 정렬한 요소들이 높이가 다를경우 위아래 중간으로 정렬해주는것(가운데로 타협) */
+    align-items: center;
+
+}
+div.hdrWrap .logo{
+    width: calc(100% / 12 * 2); 
+    height: 100px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../image/header_logo_nintendo.png);
+}
+div.hdrWrap .nav{
+    display: flex;
+    width:calc(100% / 12 * 8);
+    /* 일정간격 */
+    justify-content: space-around;
+}
+div.hdrWrap li{
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular';
+}
+
+/*메인*/
+div.mnWrap{
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+}
+div.mnWrap .imageGroup{
+    width: 100%;
+}
+div.mnWrap .image{
+    width: 100%;
+    height: 760px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.mnWrap .image.i1{
+    background-image: url('../image/main_image_1.png');
+}
+div.mnWrap .image.i2{
+    background-image: url('../image/main_image_2.png');
+}
+div.mnWrap .image.i3{
+    background-image: url('../image/main_image_3.png');
+}
+div.mnwrap .paging{
+    width: calc();
+}
+div.mnwrap li{}
+
+/*컨텐츠1*/
+div.cntWrap{}
+div.cntWrap .content.cnt01{}
+div.cntWrap .content.cnt01 header{}
+div.cntWrap .content.cnt01 h2{}
+div.cntWrap .content.cnt01 p{}
+div.cntWrap .content.cnt01 section{}
+div.cntWrap .content.cnt01 article{}
+div.cntWrap .content.cnt01 .image{}
+div.cntWrap .content.cnt01 .texts{}
+div.cntWrap .content.cnt01 p{}
+div.cntWrap .content.cnt01 h5{}
+div.cntWrap .content.cnt01 a{} /*??*/
+
+/*컨텐츠2*/
+div.cntWrap{}
+div.cntWrap .content.cnt02{}
+div.cntWrap .content.cnt02 header{}
+div.cntWrap .content.cnt02 h5{}
+div.cntWrap .content.cnt02 h2{}
+div.cntWrap .content.cnt02 p{}
+div.cntWrap .content.cnt02 h5{}
+div.cntWrap .content.cnt02 section{}
+div.cntWrap .content.cnt02 .artGroup{}
+div.cntWrap .content.cnt02 article{}
+div.cntWrap .content.cnt02 .image{}
+div.cntWrap .content.cnt02 .slideBar{}
+div.cntWrap .content.cnt02 .slideBar h5{}
+div.cntWrap .content.cnt02 .bar{}
+div.cntWrap .content.cnt02 .barPer{}
+
+/*컨텐츠3*/
+div.cntWrap{}
+div.cntWrap .content.cnt03{}
+div.cntWrap .content.cnt03 header{}
+div.cntWrap .content.cnt03 .image{}
+div.cntWrap .content.cnt03 p{}
+div.cntWrap .content.cnt03 h5{}
+div.cntWrap .content.cnt03 section{}
+div.cntWrap .content.cnt03 .imageGroup{}
+div.cntWrap .content.cnt03 section .image{}
+
+/*배너*/
+div.bnrWrap{}
+div.bnrWrap .banner{}
+
+/*컨텐츠4*/
+div.cntWrap{}
+div.cntWrap .content.cnt04{}
+div.cntWrap .content.cnt04 header{}
+div.cntWrap .content.cnt04 h5{}
+div.cntWrap .content.cnt04 h2{}
+div.cntWrap .content.cnt04 section{}
+div.cntWrap .content.cnt04 .artGroup{}
+div.cntWrap .content.cnt04 .texts{}
+div.cntWrap .content.cnt04 .texts h2{}
+div.cntWrap .content.cnt04 .texts p{}
+div.cntWrap .content.cnt04 .texts h5{}
+div.cntWrap .content.cnt04 .image{}
+div.cntWrap .content.cnt04 .slideBar{}
+div.cntWrap .content.cnt04 .slideBar h5{}
+div.cntWrap .content.cnt04 .bar{}
+div.cntWrap .content.cnt04 .barPer{}
+
+/*배너*/
+div.bnrWrap{}
+div.bnrWrap .banner{}
+div.bnrWrap .header{}
+div.bnrWrap .h2{}
+div.bnrWrap .h3{}
+div.bnrWrap section{}
+div.bnrWrap article{}
+div.bnrWrap .image{}
+div.bnrWrap .button{}
+
+/*푸터*/
+div.ftrWrap{}
+div.ftrWrap .footer{}
+div.ftrWrap .logoGroup{}
+div.ftrWrap .logo{}
+div.ftrWrap .sns{}
+div.ftrWrap h5{}
+div.ftrWrap .navGroup{}
+div.ftrWrap .nav{}
+div.ftrWrap li{}
