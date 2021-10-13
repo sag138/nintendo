@@ -84,13 +84,20 @@ div.mnwrap .paging{
 }
 div.mnwrap li{}
 
-/*컨텐츠1*/
+/* 컨텐츠 공통영역 */
 div.cntWrap{
-    width: 100%;
-    height: 800px;
+    margin-top: 80px;
 }
-div.cntWrap .content.cnt01{
+div.cntWrap .content{
+    width: 80%;
+    max-width: 1080px;
     margin: 0 auto;
+}
+
+
+
+/*컨텐츠1*/
+div.cntWrap .content.cnt01{
     font-family: 'Pretendard-Regular';
 }
 div.cntWrap .content.cnt01 header{
@@ -104,19 +111,21 @@ div.cntWrap .content.cnt01 h2{
 
 }
 div.cntWrap .content.cnt01 p{
-    margin-top: 28px;
+    line-height: 20px;
     font-size: 14px;
+    height: 40px;
+    width: calc(100% / 12 * 6);
+    overflow: hidden;
     color: #a5a5a5;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 div.cntWrap .content.cnt01 section{
-    width: 80%;
-    margin: 0 auto;
-    height: 360px;
     display: flex; /*플롯엄마*/
     justify-content: space-between;
+    margin-top: 60px;
 }
 div.cntWrap .content.cnt01 article{
-    margin-top: 64px;
     width: calc(100% / 4 - 20px);
     
 }
@@ -145,7 +154,6 @@ div.cntWrap .content.cnt01 .image.i4{
     background-image: url('../image/cnt01_imagei4.jpg');
 }
 div.cntWrap .content.cnt01 .texts{}
-div.cntWrap .content.cnt01 p{}
 div.cntWrap .content.cnt01 h5{
     margin-top: 33px;
     color: coral;
@@ -155,13 +163,11 @@ div.cntWrap .content.cnt01 h5{
 div.cntWrap .content.cnt01 a{} /*??*/
 
 /*컨텐츠2*/
-div.cntWrap{
+div.cntWrap:nth-of-type(4){
     background-color: #f4f4f4;
+    padding: 160px 0 80px 0;
 }
 div.cntWrap .content.cnt02{
-    width: 80%;
-    max-width: 1080px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -256,51 +262,208 @@ div.cntWrap .content.cnt02 .barPer{
 }
 
 /*컨텐츠3*/
-div.cntWrap{}
-div.cntWrap .content.cnt03{}
-div.cntWrap .content.cnt03 header{}
-div.cntWrap .content.cnt03 .image{}
-div.cntWrap .content.cnt03 p{}
-div.cntWrap .content.cnt03 h5{}
-div.cntWrap .content.cnt03 section{}
-div.cntWrap .content.cnt03 .imageGroup{}
-div.cntWrap .content.cnt03 section .image{}
+div.cntWrap:nth-of-type(5){
+    background-image: url('../image/cnt03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    padding: 240px 0;
+}
+div.cntWrap .content.cnt03{
+    font-family: 'Pretendard-Regular';
+    display: flex;
+    justify-content: space-between;
+}
+div.cntWrap .content.cnt03 header{
+    width: calc(100% / 12 * 4.2);
 
-/*배너*/
+}
+div.cntWrap .content.cnt03 .image{
+    height: 200px;
+    background-color: #fc0;
+    background-image: url('');
+}
+div.cntWrap .content.cnt03 p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6f6f6f;
+    
+}
+div.cntWrap .content.cnt03 h5{
+    color: coral;
+    font-size: 12px;
+}
+div.cntWrap .content.cnt03 span{
+    color: #2d2d2d;
+    line-height: 80px;
+}
+div.cntWrap .content.cnt03 section{
+   width: calc(100% / 12 * 7);    
+}
+div.cntWrap .content.cnt03 section .image:nth-of-type(1)~div{
+    width: calc(100% / 7 * 3 - 15px);
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: absolute;
+}
+div.cntWrap .content.cnt03 section .imgGroup{
+    position: relative;
+    height: 480px;
+}
+div.cntWrap .content.cnt03 section .image.i1{
+    width: calc(100% / 7 * 4 - 15px);
+    height: 480px;
+    background-color: #fc0;
+    background-image: url('');
+    position: absolute;
+    left: 0;top: 0;
+}
+div.cntWrap .content.cnt03 section .image.i2{
+    background-color: cornflowerblue;
+    background-image: url('');
+    top: 0;right: 0;
+
+}
+div.cntWrap .content.cnt03 section .image.i3{
+    background-color: darkcyan;
+    background-image: url('');
+    bottom: 0;right: 0;
+    margin-top: 10px;
+}
+/*배너 공통*/
 div.bnrWrap{}
-div.bnrWrap .banner{}
+div.bnrWrap .banner{
+    height: 760px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*배너 1*/
+div.bnrWrap .banner.bnr01{
+    background-image: url('../image/banner_a.jpg');
+    cursor: pointer;
+}
 
 /*컨텐츠4*/
-div.cntWrap{}
-div.cntWrap .content.cnt04{}
-div.cntWrap .content.cnt04 header{}
-div.cntWrap .content.cnt04 h5{}
-div.cntWrap .content.cnt04 h2{}
-div.cntWrap .content.cnt04 section{}
-div.cntWrap .content.cnt04 .artGroup{}
-div.cntWrap .content.cnt04 .texts{}
-div.cntWrap .content.cnt04 .texts h2{}
-div.cntWrap .content.cnt04 .texts p{}
-div.cntWrap .content.cnt04 .texts h5{}
-div.cntWrap .content.cnt04 .image{}
-div.cntWrap .content.cnt04 .slideBar{}
-div.cntWrap .content.cnt04 .slideBar h5{}
-div.cntWrap .content.cnt04 .bar{}
-div.cntWrap .content.cnt04 .barPer{}
+div.cntWrap:nth-of-type(7){
+    background-color: #f4f4f4;
+    padding: 40px 0 80px 0;
+    margin-top: 0;
+}
+div.cntWrap .content.cnt04{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Pretendard-Regular';
+}
+div.cntWrap .content.cnt04 header{
+    text-align: center;
+}
+div.cntWrap .content.cnt04 h5{
+    font-size: 12px;
+    color: #6f6f6f;
+}
+div.cntWrap .content.cnt04 h2{
+    font-size: 30px;
+    font-family: 'Pretendard-ExtraBold';
+    color: #6f6f6f;
+}
+div.cntWrap .content.cnt04 section{
+    padding: 80px 160px 40px;
+}
+div.cntWrap .content.cnt04 .artGroup{
+}
+div.cntWrap .content.cnt04 article{
+    display: flex;
+}
+div.cntWrap .content.cnt04 .texts{
+    padding: 80px 0 80px;
+    width: calc(100% / 12 * 5);
+}
+div.cntWrap .content.cnt04 .texts h2{
+}
+div.cntWrap .content.cnt04 .texts p{
+    margin-top: 40px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+div.cntWrap .content.cnt04 .texts h5{
+    margin-top: 40px;
+    color: coral;
+    font-size: 12px;
+    cursor: pointer;
+}
+div.cntWrap .content.cnt04 .image{
+    width: calc(100% / 12 * 5);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+div.cntWrap .content.cnt04 .image.i1{
+    background-color: #fc0;
+}
+div.cntWrap .content.cnt04 .image.i2{
+    background-color: violet;
+}
+div.cntWrap .content.cnt04 .image.i3{
+    background-color: turquoise;
+}
+div.cntWrap .content.cnt04 .slideBar{
+    width: 100%;
+}
+div.cntWrap .content.cnt04 .slideBar h5{
+    line-height: 40px;
+    color: coral;
+    font-style: italic;
+}
+div.cntWrap .content.cnt04 .bar{
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    position: relative;
+}
+div.cntWrap .content.cnt04 .barPer{
+    width: calc(100% / 11 * 3);
+    height: 5px;
+    background-color: coral;
+    position: absolute;
+    top: -1px;
+}
 
-/*배너*/
-div.bnrWrap{}
-div.bnrWrap .banner{}
-div.bnrWrap .header{}
-div.bnrWrap .h2{}
-div.bnrWrap .h3{}
-div.bnrWrap section{}
+/*배너2 */
+div.bnrWrap .banner.bnr02{
+    background-image: url('../image/banner_b.jpg');
+    text-align: center;
+}
+div.bnrWrap .banner.bnr02 header{
+
+}
+div.bnrWrap h2{
+    font-size: 30px;
+    font-family: 'Pretendard-ExtraBold';
+    color: #ff4800;
+}
+div.bnrWrap h3{
+    font-size: 24px;
+    font-family: 'Pretendard-ExtraBold';
+    color: white;
+}
+div.bnrWrap section{
+}
 div.bnrWrap article{}
 div.bnrWrap .image{}
 div.bnrWrap .button{}
 
 /*푸터*/
-div.ftrWrap{}
+div.ftrWrap{
+    background-color: black;
+    height: 320px;
+    color: white;
+}
 div.ftrWrap .footer{}
 div.ftrWrap .logoGroup{}
 div.ftrWrap .logo{}
