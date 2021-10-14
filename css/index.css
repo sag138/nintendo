@@ -10,6 +10,19 @@
     font-weight: 800;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+/*닌텐도로고*/
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*헤더*/
 div.hdrWrap{
@@ -114,10 +127,7 @@ div.cntWrap .content.cnt01 p{
     line-height: 20px;
     font-size: 14px;
     height: 40px;
-    width: calc(100% / 12 * 6);
-    overflow: hidden;
     color: #a5a5a5;
-    margin: 0 auto;
     margin-top: 20px;
 }
 div.cntWrap .content.cnt01 section{
@@ -127,7 +137,6 @@ div.cntWrap .content.cnt01 section{
 }
 div.cntWrap .content.cnt01 article{
     width: calc(100% / 4 - 20px);
-    
 }
 div.cntWrap .content.cnt01 .image{
     width: 100%;
@@ -155,7 +164,8 @@ div.cntWrap .content.cnt01 .image.i4{
 }
 div.cntWrap .content.cnt01 .texts{}
 div.cntWrap .content.cnt01 h5{
-    margin-top: 33px;
+    /*이거수정*/
+    margin-top: 40px;
     color: coral;
     font-size: 12px;
     cursor: pointer;
@@ -192,18 +202,20 @@ div.cntWrap .content.cnt02 h2{
 }
 div.cntWrap .content.cnt02 p{
     font-size: 12px;
-    margin-top: 29px;
+    margin-top: 40px;
     color: #6f6f6f;
 
 }
 div.cntWrap .content.cnt02 h5{
-    margin-top: 33px;
+    margin-top: 120px;
     color: coral;
     font-size: 12px;
 }
 div.cntWrap .content.cnt02 header h5{
     cursor: pointer;
 }
+
+
 div.cntWrap .content.cnt02 section{
     width: calc(100% / 12 * 8);
     overflow: hidden;
@@ -225,7 +237,7 @@ div.cntWrap .content.cnt02 .image{
     background-position: center;
 }
 div.cntWrap .content.cnt02 .image.i1{
-    background-color: #fc0;
+    background-color: #fff;
     background-image: url('../image/cnt02_imagei1.jpg');
 }
 div.cntWrap .content.cnt02 .image.i2{
@@ -235,6 +247,7 @@ div.cntWrap .content.cnt02 .image.i2{
 div.cntWrap .content.cnt02 .image.i3{
     background-color: #fc0;
     background-image: url('../image/cnt02_imagei3.jpg');
+    background-position: right;
 }
 div.cntWrap .content.cnt02 .image.i4{
     background-color: #fc0;
@@ -242,23 +255,49 @@ div.cntWrap .content.cnt02 .image.i4{
 }
 div.cntWrap .content.cnt02 .slideBar{
     width: 100%;
-}
-div.cntWrap .content.cnt02 .slideBar h5{
-    line-height: 40px;
-    font-style: italic;
+    overflow: hidden;
+    height: 150px;
 }
 div.cntWrap .content.cnt02 .bar{
     width: 100%;
     height: 3px;
     background-color: #ccc;
     position: relative;
+    margin-top: 120px;
 }
+div.cntWrap .content.cnt02 .bar h5{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: calc((50px - 3px) / -2);
+    margin-top: 0;
+    cursor: pointer;
+}
+
+div.cntWrap .content.cnt02 .bar h5:nth-of-type(1){
+    left: -100px;
+    z-index: 1;
+    transition: left 0.5s;
+}
+div.cntWrap .content.cnt02 .bar h5:nth-of-type(2){
+    right: 0;
+    transition: right 0.5s;
+}
+
 div.cntWrap .content.cnt02 .barPer{
     width: 50%;
     height: 5px;
     background-color: coral;
     position: absolute;
     top: -1px;
+    transition: width 0.5s;
 }
 
 /*컨텐츠3*/
@@ -277,18 +316,18 @@ div.cntWrap .content.cnt03{
 }
 div.cntWrap .content.cnt03 header{
     width: calc(100% / 12 * 4.2);
-
 }
 div.cntWrap .content.cnt03 .image{
     height: 200px;
-    background-color: #fc0;
-    background-image: url('');
+    background-image: url('../image/cnt03_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 div.cntWrap .content.cnt03 p{
     margin-top: 20px;
     font-size: 12px;
     color: #6f6f6f;
-    
 }
 div.cntWrap .content.cnt03 h5{
     color: coral;
@@ -317,19 +356,19 @@ div.cntWrap .content.cnt03 section .image.i1{
     width: calc(100% / 7 * 4 - 15px);
     height: 480px;
     background-color: #fc0;
-    background-image: url('');
+    background-image: url('../image/cnt03_image01.jpg');
     position: absolute;
     left: 0;top: 0;
 }
 div.cntWrap .content.cnt03 section .image.i2{
     background-color: cornflowerblue;
-    background-image: url('');
+    background-image: url('../image/cnt03_image03.jpg');
     top: 0;right: 0;
 
 }
 div.cntWrap .content.cnt03 section .image.i3{
     background-color: darkcyan;
-    background-image: url('');
+    background-image: url('../image/cnt03_image04.jpg');
     bottom: 0;right: 0;
     margin-top: 10px;
 }
@@ -351,7 +390,7 @@ div.bnrWrap .banner.bnr01{
 /*컨텐츠4*/
 div.cntWrap:nth-of-type(7){
     background-color: #f4f4f4;
-    padding: 40px 0 80px 0;
+    padding: 80px 0 80px 0;
     margin-top: 0;
 }
 div.cntWrap .content.cnt04{
@@ -372,12 +411,16 @@ div.cntWrap .content.cnt04 h2{
     color: #6f6f6f;
 }
 div.cntWrap .content.cnt04 section{
-    padding: 80px 160px 40px;
+    overflow: hidden;
 }
 div.cntWrap .content.cnt04 .artGroup{
+    width: 300%;
+    display: flex;
 }
 div.cntWrap .content.cnt04 article{
+    width: calc(100% / 3);
     display: flex;
+    padding: 80px;
 }
 div.cntWrap .content.cnt04 .texts{
     padding: 80px 0 80px;
@@ -401,10 +444,11 @@ div.cntWrap .content.cnt04 .image{
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 div.cntWrap .content.cnt04 .image.i1{
     background-color: #fc0;
+    background-image: url('../image/cnt04_image01.jpg');
 }
 div.cntWrap .content.cnt04 .image.i2{
     background-color: violet;
@@ -414,61 +458,143 @@ div.cntWrap .content.cnt04 .image.i3{
 }
 div.cntWrap .content.cnt04 .slideBar{
     width: 100%;
-}
-div.cntWrap .content.cnt04 .slideBar h5{
-    line-height: 40px;
-    color: coral;
-    font-style: italic;
+    overflow: hidden;
+    height: 100px;
 }
 div.cntWrap .content.cnt04 .bar{
     width: 100%;
     height: 3px;
     background-color: #ccc;
     position: relative;
+    margin-top: 50px;
 }
+div.cntWrap .content.cnt04 .bar h5{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: calc((50px - 3px) / -2);
+    margin-top: 0;
+    cursor: pointer;
+}
+
+div.cntWrap .content.cnt04 .bar h5:nth-of-type(1){
+    left: -100px;
+    z-index: 1;
+    transition: left 0.5s;
+}
+div.cntWrap .content.cnt04 .bar h5:nth-of-type(2){
+    right: 0;
+    transition: right 0.5s;
+}
+
 div.cntWrap .content.cnt04 .barPer{
-    width: calc(100% / 11 * 3);
+    width: 50%;
     height: 5px;
     background-color: coral;
     position: absolute;
     top: -1px;
+    transition: width 0.5s;
 }
 
 /*배너2 */
 div.bnrWrap .banner.bnr02{
+    height: 480px;
+    padding-top: 160px;
     background-image: url('../image/banner_b.jpg');
     text-align: center;
+    cursor: pointer;
+    background-attachment: fixed;
 }
 div.bnrWrap .banner.bnr02 header{
-
 }
 div.bnrWrap h2{
-    font-size: 30px;
+    font-size: 36px;
     font-family: 'Pretendard-ExtraBold';
     color: #ff4800;
 }
 div.bnrWrap h3{
+    margin-top: 20px;
     font-size: 24px;
-    font-family: 'Pretendard-ExtraBold';
+    font-family: 'Pretendard-Regular';
     color: white;
 }
 div.bnrWrap section{
 }
 div.bnrWrap article{}
 div.bnrWrap .image{}
-div.bnrWrap .button{}
+div.bnrWrap .button{
+    width: calc(100% / 12 * 1.5);
+    color: white;
+    font-family: 'Pretendard-Regular';
+    line-height: 40px;
+    border-radius: 20px;
+    outline: 2.5px solid #ff4800;
+    margin: 0 auto;
+    margin-top: 80px;
+}
 
 /*푸터*/
 div.ftrWrap{
-    background-color: black;
-    height: 320px;
+    font-family: 'Pretendard-Thin';
+    background-color: #121212;
     color: white;
+    height: 320px;
+    padding: 0px 200px;
 }
-div.ftrWrap .footer{}
-div.ftrWrap .logoGroup{}
-div.ftrWrap .logo{}
-div.ftrWrap .sns{}
-div.ftrWrap h5{}
-div.ftrWrap .navGroup{}
-div.ftrWrap .nav{}
-div.ftrWrap li{}
+div.ftrWrap .footer{
+    width: 80%;
+    height: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+div.ftrWrap .logoGroup{
+
+}
+div.ftrWrap .logo{
+    width: calc(100% / 4 * 2);
+    height: 40px;
+    margin-top: 80px;
+    font-size: 36px;
+    color: #ed1a22;
+    font-family: 'RixYeoljeongdo_Regular';
+}
+div.ftrWrap .sns{
+    width: 100%;
+    height: 40px;
+    margin-top: 80px;
+    color: white;
+    justify-content: space-between;
+    font-size: 25px;
+}
+div.ftrWrap .sns i{
+    margin-left: 20px;
+}div.ftrWrap .sns i:nth-of-type(1){
+    margin-left: 0px;
+}
+div.ftrWrap h5{
+    font-size: 12px;
+    color: #6f6f6f;
+    margin-top: 20px;
+}
+div.ftrWrap .navGroup{
+    width: calc(100% / 12 * 8);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 14px;
+}
+div.ftrWrap .nav{
+    line-height: 40px;
+}
+div.ftrWrap li:nth-of-type(1){
+    font-weight: 800;
+}
