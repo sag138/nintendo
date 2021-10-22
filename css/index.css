@@ -24,7 +24,7 @@
     font-style: normal;
 }
 
-/*헤더*/
+/*header*/
 div.hdrWrap{
     height: 120px;
     width: 100%;
@@ -66,7 +66,7 @@ div.hdrWrap li{
     font-weight: 600;
 }
 
-/*메인*/
+/*main*/
 div.mnWrap{
     width: 100%;
     height: 760px;
@@ -84,7 +84,7 @@ div.mnWrap .image{
     background-size: cover;
 }
 div.mnWrap .image.i1{
-    background-image: url('../image/main_image_1.png');
+    background-image: url('../image/main_image_3.png');
 }
 div.mnWrap .image.i2{
     background-image: url('../image/main_image_2.png');
@@ -97,7 +97,7 @@ div.mnwrap .paging{
 }
 div.mnwrap li{}
 
-/* 컨텐츠 공통영역 */
+/* content*/
 div.cntWrap{
     margin-top: 80px;
 }
@@ -109,7 +109,7 @@ div.cntWrap .content{
 
 
 
-/*컨텐츠1*/
+/*content1*/
 div.cntWrap .content.cnt01{
     font-family: 'Pretendard-Regular';
 }
@@ -164,15 +164,16 @@ div.cntWrap .content.cnt01 .image.i4{
 }
 div.cntWrap .content.cnt01 .texts{}
 div.cntWrap .content.cnt01 h5{
-    /*이거수정*/
     margin-top: 40px;
     color: coral;
     font-size: 12px;
     cursor: pointer;
+    font-style: italic;
+    font-weight: 700;
 }
 div.cntWrap .content.cnt01 a{} /*??*/
 
-/*컨텐츠2*/
+/*content2*/
 div.cntWrap:nth-of-type(4){
     background-color: #f4f4f4;
     padding: 160px 0 80px 0;
@@ -190,7 +191,6 @@ div.cntWrap .content.cnt02 header{
 div.cntWrap .content.cnt02 h4{
     font-size: 12px;
     color: #6f6f6f; 
-    /* 1. 색반만바꿀수있나ㅠ 2. 따로놓으면 html이름 고민.. span태그 추가해서 다시 선택하세요*/
 }
 div.cntWrap .content.cnt02 h4 span{
     color: #a5a5a5;
@@ -210,12 +210,13 @@ div.cntWrap .content.cnt02 h5{
     margin-top: 120px;
     color: coral;
     font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
 }
 div.cntWrap .content.cnt02 header h5{
     cursor: pointer;
 }
-
-
 div.cntWrap .content.cnt02 section{
     width: calc(100% / 12 * 8);
     overflow: hidden;
@@ -228,6 +229,7 @@ div.cntWrap .content.cnt02 .artGroup{
 }
 div.cntWrap .content.cnt02 article{
     width: calc(100% / 4 - 20px);
+    cursor: pointer;
 }
 div.cntWrap .content.cnt02 .image{
     width: 100%;
@@ -292,7 +294,7 @@ div.cntWrap .content.cnt02 .bar h5:nth-of-type(2){
 }
 
 div.cntWrap .content.cnt02 .barPer{
-    width: 50%;
+    width: calc(100% / 3);
     height: 5px;
     background-color: coral;
     position: absolute;
@@ -300,7 +302,7 @@ div.cntWrap .content.cnt02 .barPer{
     transition: width 0.5s;
 }
 
-/*컨텐츠3*/
+/*content3*/
 div.cntWrap:nth-of-type(5){
     background-image: url('../image/cnt03.png');
     background-repeat: no-repeat;
@@ -316,29 +318,40 @@ div.cntWrap .content.cnt03{
 }
 div.cntWrap .content.cnt03 header{
     width: calc(100% / 12 * 4.2);
+    margin-top: 80px;
 }
 div.cntWrap .content.cnt03 .image{
     height: 200px;
     background-image: url('../image/cnt03_logo.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    margin: 0 auto;
 }
 div.cntWrap .content.cnt03 p{
     margin-top: 20px;
     font-size: 12px;
-    color: #6f6f6f;
+    color: #2b4a57;
+    font-family: 'Pretendard-Regular';
 }
 div.cntWrap .content.cnt03 h5{
     color: coral;
     font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
+    cursor: pointer;
 }
 div.cntWrap .content.cnt03 span{
     color: #2d2d2d;
     line-height: 80px;
+    font-weight: 700;
 }
 div.cntWrap .content.cnt03 section{
    width: calc(100% / 12 * 7);    
+}
+div.cntWrap .content.cnt03 section .image{
+    border-radius: 20px;
+    background-size: cover;
 }
 div.cntWrap .content.cnt03 section .image:nth-of-type(1)~div{
     width: calc(100% / 7 * 3 - 15px);
@@ -351,6 +364,7 @@ div.cntWrap .content.cnt03 section .image:nth-of-type(1)~div{
 div.cntWrap .content.cnt03 section .imgGroup{
     position: relative;
     height: 480px;
+    cursor: pointer;
 }
 div.cntWrap .content.cnt03 section .image.i1{
     width: calc(100% / 7 * 4 - 15px);
@@ -360,19 +374,40 @@ div.cntWrap .content.cnt03 section .image.i1{
     position: absolute;
     left: 0;top: 0;
 }
+div.cntWrap .content.cnt03 section .image.i1:hover{
+    width: 100%;
+    background-image: url('../image/cnt03_image01.jpg');
+    z-index: 1;
+    transition: all 0.5s;
+}
+
 div.cntWrap .content.cnt03 section .image.i2{
-    background-color: cornflowerblue;
     background-image: url('../image/cnt03_image03.jpg');
     top: 0;right: 0;
 
 }
+div.cntWrap .content.cnt03 section .image.i2:hover{
+    width: 100%;
+    height: 480px;
+    background-image: url('../image/cnt03_image03.jpg');
+    z-index: 1;
+    transition: all 0.5s;
+}
 div.cntWrap .content.cnt03 section .image.i3{
-    background-color: darkcyan;
-    background-image: url('../image/cnt03_image04.jpg');
+    background-image: url('../image/cnt03_image05.jpg');
     bottom: 0;right: 0;
     margin-top: 10px;
 }
-/*배너 공통*/
+div.cntWrap .content.cnt03 section .image.i3:hover{
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    background-image: url('../image/cnt03_image05.jpg');
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+/*banner*/
 div.bnrWrap{}
 div.bnrWrap .banner{
     height: 760px;
@@ -381,13 +416,13 @@ div.bnrWrap .banner{
     background-size: cover;
 }
 
-/*배너 1*/
+/*banner 1*/
 div.bnrWrap .banner.bnr01{
     background-image: url('../image/banner_a.jpg');
     cursor: pointer;
 }
 
-/*컨텐츠4*/
+/*content4*/
 div.cntWrap:nth-of-type(7){
     background-color: #f4f4f4;
     padding: 80px 0 80px 0;
@@ -418,33 +453,46 @@ div.cntWrap .content.cnt04 .artGroup{
     display: flex;
 }
 div.cntWrap .content.cnt04 article{
-    width: calc(100% / 3);
+    width: 100%;
     display: flex;
     padding: 80px;
 }
 div.cntWrap .content.cnt04 .texts{
+    width: 50%;
+    height: 400px;
     padding: 80px 0 80px;
-    width: calc(100% / 12 * 5);
+    text-align: center;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 div.cntWrap .content.cnt04 .texts h2{
 }
 div.cntWrap .content.cnt04 .texts p{
     margin-top: 40px;
     font-size: 12px;
-    color: #a5a5a5;
+    color: #6f6f6f;
 }
 div.cntWrap .content.cnt04 .texts h5{
-    margin-top: 40px;
     color: coral;
     font-size: 12px;
+    font-style: italic;
+    font-weight: 700;
     cursor: pointer;
+    
+    outline: 2px solid coral;
+    border-radius: 20px;
+    padding: 5px;
+    width: calc(100% /4 * 2);
+    margin: 0 auto;
+    margin-top: 40px;
 }
 div.cntWrap .content.cnt04 .image{
-    width: calc(100% / 12 * 5);
+    width: 50%;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 }
 div.cntWrap .content.cnt04 .image.i1{
     background-color: #fc0;
@@ -452,9 +500,12 @@ div.cntWrap .content.cnt04 .image.i1{
 }
 div.cntWrap .content.cnt04 .image.i2{
     background-color: violet;
+    background-image: url('../image/cnt04_image02.jpg');
 }
 div.cntWrap .content.cnt04 .image.i3{
     background-color: turquoise;
+    background-image: url('../image/cnt04_image03.jpg');
+    background-position: left;
 }
 div.cntWrap .content.cnt04 .slideBar{
     width: 100%;
@@ -495,7 +546,7 @@ div.cntWrap .content.cnt04 .bar h5:nth-of-type(2){
 }
 
 div.cntWrap .content.cnt04 .barPer{
-    width: 50%;
+    width: calc(100% / 3);
     height: 5px;
     background-color: coral;
     position: absolute;
@@ -503,7 +554,7 @@ div.cntWrap .content.cnt04 .barPer{
     transition: width 0.5s;
 }
 
-/*배너2 */
+/*banner2 */
 div.bnrWrap .banner.bnr02{
     height: 480px;
     padding-top: 160px;
@@ -539,8 +590,12 @@ div.bnrWrap .button{
     margin: 0 auto;
     margin-top: 80px;
 }
+div.bnrWrap .button:hover{
+    width: calc(100% / 12 * 1.5);
+    background-color: #ff4800;
+}
 
-/*푸터*/
+/*footer*/
 div.ftrWrap{
     font-family: 'Pretendard-Thin';
     background-color: #121212;
@@ -575,6 +630,7 @@ div.ftrWrap .sns{
     font-size: 25px;
 }
 div.ftrWrap .sns i{
+    cursor: pointer;
     margin-left: 20px;
 }div.ftrWrap .sns i:nth-of-type(1){
     margin-left: 0px;

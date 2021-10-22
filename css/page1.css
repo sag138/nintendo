@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+/*닌텐도로고*/
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*banner*/
+div.bnrWrap{
+}
+div.bnrWrap .banner{
+    width: 100%;
+    height: 880px;
+    background-image: url('../image/page1_banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*contetn*/
+div.cntWrap{
+    width: 100%;
+}
+div.content{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*content1*/
+div.cntWrap:nth-of-type(2){
+    background-color: #434343;
+    height: 920px;
+}
+div.cntWrap .content.cnt01{
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+div.cntWrap .content.cnt01 header{
+    padding-top: 160px;
+    text-align: center;
+    color: white;
+}
+div.cntWrap .content.cnt01 h2{
+    font-size: 48px;
+    font-family: 'Pretendard-ExtraBold';
+}
+div.cntWrap .content.cnt01 h3{
+    font-size: 36px;
+    font-family: 'Pretendard-Regular';
+}
+div.cntWrap .content.cnt01 section{
+    margin-top: 80px;
+}
+div.cntWrap .content.cnt01 article{
+    position: relative;
+
+}
+div.cntWrap .content.cnt01 .image{
+    width: 80vw;
+    max-width: 1080px;
+    max-height: 430px;
+    height: 34vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;left: 0;
+    background-image: url('../image/page1_cnt01_image.png');
+    z-index: 2;
+}
+   
+div.cntWrap .content.cnt01 .vid{
+    width: 80vw;
+    max-width: 1080px;
+    max-height: 380px;
+    height: 30vw;
+    position: absolute;
+    top: 1vw;left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url('../image/page1_cnt01_vid.gif');
+}
+
+/*content2*/
+div.cntWrap{
+}
+div.cntWrap .content.cnt02{
+    max-width: none;
+    position: relative;
+}
+div.cntWrap .content.cnt02 header{
+}
+div.cntWrap .content.cnt02 section{
+    width: 100%;
+}
+div.cntWrap .content.cnt02 .artView{
+    width: 100%;
+    overflow: hidden;
+}
+div.cntWrap .content.cnt02 .artGroup{
+    width: 200%;
+    display: flex;
+}
+div.cntWrap .content.cnt02 article{
+    width: 100%;
+}
+div.cntWrap .content.cnt02 .image{
+    height: 720px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.cntWrap .content.cnt02 .image.i1{
+    background-image: url('../image/page1_cnt02_image1.png');
+}
+div.cntWrap .content.cnt02 .image.i2{
+    background-image: url('../image/page1_cnt02_image2.png');
+}
+div.cntWrap .content.cnt02 .image.i3{
+    background-image: url('../image/page1_cnt02_image3.png');
+}
+div.cntWrap .content.cnt02 .image.i4{
+    background-image: url('../image/page1_cnt02_image4.png');
+}
+div.cntWrap .content.cnt02 .image.i5{
+    background-image: url('../image/page1_cnt02_image5.png');
+}
+div.cntWrap .content.cnt02 .image.i6{
+    background-image: url('../image/page1_cnt02_image6.png');
+}
+div.cntWrap .content.cnt02 .bnts{
+}
+div.cntWrap .content.cnt02 .left{
+    width: 20%;
+    background-color: #fff;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+div.cntWrap .content.cnt02 .left:hover{
+    width: 20%;
+    background-color: #fff;
+    height: 720px;
+    opacity: 0.3;
+    margin-left: auto;
+}
+div.cntWrap .content.cnt02 .right{
+    width: 20%;
+    background-color: #fc0;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+div.cntWrap .content.cnt02 .right:hover{
+    width: 20%;
+    background-color: #fff;
+    height: 720px;
+    opacity: 0.3;
+    margin-left: auto;
+}
+
+/*content3*/
+div.cntWrap{
+
+}
+div.cntWrap .content.cnt03{
+    max-width: none;
+    width: 100%;
+    height: 680px;
+    background-image: url('../image/page1_cnt03_img.png');
+    background-repeat: no-repeat;
+    margin-left: 0;
+}
+div.cntWrap .content.cnt03 header{
+    width: 50%;
+    margin: 0 auto;
+    color: #434343;
+    padding-top: 320px;
+    margin-left: 50%;
+    
+}
+div.cntWrap .content.cnt03 header h5{
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    font-weight: 700;
+}
+div.cntWrap .content.cnt03 header span{
+    font-family: 'Pretendard-Regular';
+    font-size: 48px;
+}
+div.cntWrap .content.cnt03 header h2{
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 48px;
+    margin-top: 40px;
+}
+div.cntWrap .content.cnt03 header p{
+    font-size: 24px;
+    font-family: 'Pretendard-Thin';
+}
+div.cntWrap .content.cnt03 section{
+    color: #212121; 
+    margin-top: 120px;
+}
+div.cntWrap .content.cnt03 article{
+    display: flex;
+
+}
+
+div.cntWrap .content.cnt03 article:nth-of-type(2){
+    display: flex;
+    direction: rtl;
+
+}
+
+div.cntWrap .content.cnt03 article .image{
+    width: calc(100% /12 * 6);
+    height: 440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+}
+div.cntWrap .content.cnt03 .image.i1{
+    background-color: #fff;
+    background-image: url('../image/page1_cnt3_image1.jpg');
+}
+div.cntWrap .content.cnt03 .image.i2{
+    background-image: url('../image/page1_cnt3_image2.jpg');
+}
+div.cntWrap .content.cnt03 .image.i3{
+    background-image: url('../image/page1_cnt3_image3.jpg');
+}
+div.cntWrap .content.cnt03 .texts{
+    width: calc(100% /12 * 6);
+    text-align: center;
+    margin-top: 120px;
+}
+div.cntWrap .content.cnt03 .texts:nth-of-type(1){
+    width: calc(100% /12 * 6);
+    text-align: center;
+    margin-top: 80px;
+}
+div.cntWrap .content.cnt03 .texts h2{
+    font-size: 40px;
+    font-family: 'Pretendard-ExtraBold';
+}
+div.cntWrap .content.cnt03 .texts p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+
+
+/*footer*/

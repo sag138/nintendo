@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+/*닌텐도로고*/
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* banner01*/
+div.bnrWrap{
+}
+div.bnrWrap .banner.bnr01{
+    height: 960px;
+    background-image: url('../image/page3_banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*content*/
+div.cntWrap{
+    width: 100%;
+}
+div.cntWrap .content{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*content01*/
+div.cntWrap{}
+div.cntWrap .content.cnt01{
+    max-width: none;
+    height: 1320px;
+    background-color: #fc0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../image/page3_cnt1_image.png');
+}
+div.cntWrap .content.cnt01 header{}
+div.cntWrap .content.cnt01 .title{}
+div.cntWrap .content.cnt01 section{
+    padding-top: 780px;
+}
+div.cntWrap .content.cnt01 article{
+
+}
+div.cntWrap .content.cnt01 .image{
+    height: 440px;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: url('../image/page3_cnt01_image1.png');
+    animation: image 70s linear;
+}
+@keyframes image{
+    0% {
+    background-position: left;
+    }
+    70%{
+    background-position: right;
+    }
+    100% {
+    background-position: left;
+    }
+}
+
+/*content02*/
+div.cntWrap{}
+div.cntWrap .content.cnt02{
+    margin-top: 120px;
+}
+div.cntWrap .content.cnt02 header{}
+div.cntWrap .content.cnt02 section{
+}
+div.cntWrap .content.cnt02 article{
+    display: flex;
+}
+div.cntWrap .content.cnt02 .image{
+    margin-left: auto;
+    margin-right: 180px;
+    width: calc(100% / 12 * 2);
+    height: 200px;
+    background-image: url('../image/page3_cnt2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div.cntWrap .content.cnt02 .texts{
+    color: #434343;
+    margin-left: 160px;
+}
+div.cntWrap .content.cnt02 h2{
+    font-size: 48px;
+    font-family: 'Pretendard-ExtraBold';
+}
+div.cntWrap .content.cnt02 span{
+    font-size: 30px;
+    font-family: 'Pretendard-Regular';
+}
+div.cntWrap .content02 p{
+    font-size: 18px;
+    font-family: 'Pretendard-Thin';
+}
+
+/*banner02*/
+div.bnrWrap{}
+div.bnrWrap .banner.bnr02{
+    margin-top: 120px;
+    height: 400px;
+    background-image: url('../image/page3_banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
